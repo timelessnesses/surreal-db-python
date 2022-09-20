@@ -1,4 +1,4 @@
-.PHONY: test clean build build_c_lib
+.PHONY: test clean build publish
 stubgen:
 	@echo "Generating stubs for $(TARGET)"
 	cd surreal
@@ -13,14 +13,14 @@ beauty:
 
 build:
 	@echo "Building $(TARGET)"
-	python setup.py build
+	python setup.py sdist bdist_wheel
 
 test:
 	@echo "Testing Surreal Driver"
 	cd test
 	pytest
 
-build_c_lib:
-	@echo "Building surreal_compiled for faster speed (barely noticable)"
-	cythonize surreal/surreal_compiled.py -3
-	cythonize surreal/surreal_compiled.py --build --inplace
+publish:
+	@echo "Publishing $(TARGET)"
+	python setup.py sdist bdist_wheel
+	twine upload --verbose dist/* 

@@ -10,6 +10,8 @@ A pure python (and compilable) database client for SurrealDB.
 pip install surreal-db-python
 ```
 
+See how to build your own wheel [here](#build-from-source)
+
 2. (Optional) You could make library pure python by set `SURREAL_BUILD_NO_COMPILE` enviroment variable to 1
 
 ## Usage
@@ -33,3 +35,11 @@ client.fetch("SELECT * FROM deez:nut;")
 
 - Supported Asynchronous Operation (with class `AsyncSurrealDB`) (`AsyncSurrealDB` have same API as `SurrealDB but you await them.)
 - (not) Supported websocket (yet)
+
+## Build from source
+
+1. Clone repository
+
+2. `poetry install`
+
+3. `./setup.py install`
