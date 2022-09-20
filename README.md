@@ -10,10 +10,6 @@ A pure python (and compilable) database client for SurrealDB.
 pip install surreal-db-python
 ```
 
-See how to build your own wheel [here](#build-from-source)
-
-2. (Optional) You could make library pure python by set `SURREAL_BUILD_NO_COMPILE` enviroment variable to 1
-
 ## Usage
 
 ```py
@@ -42,4 +38,4 @@ client.fetch("SELECT * FROM deez:nut;")
 
 2. `poetry install`
 
-3. `./setup.py install`
+3. `./setup.py sdist bdist_wheel` for wheel or `./setup.py install` for install package directly (egg included)
