@@ -3,14 +3,14 @@ import os
 
 setuptools.setup(
     name="surreal-db-python",
-    version="1.0.0",
+    version="1.0.1",
     description="Python client for the Surreal Database (Websocket not supported)",
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',
     author="Rukchad Wongprayoon",
     author_email="contact@rukchadisa.live",
     url="https://github.com/timelessnesses/surreal-db-python",
-    packages=['surreal'],
+    packages=['surreal','surreal.utils'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Development Status :: 2 - Pre-Alpha",
