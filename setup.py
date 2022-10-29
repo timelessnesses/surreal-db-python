@@ -3,7 +3,7 @@ import os
 
 setuptools.setup(
     name="surreal-db-python",
-    version="1.0.1",
+    version="1.0.2",
     description="Python client for the Surreal Database (Websocket not supported)",
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',

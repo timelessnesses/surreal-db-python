@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "surreal-db-python"
-version = "1.0.1"
+version = "1.0.2"
 description = "A surrealdb API wrapper (websocket coming soon)"
 authors = ["timelessnesses <mooping3roblox@gmail.com>"]
 license = "MIT"
